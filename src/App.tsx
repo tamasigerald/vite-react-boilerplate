@@ -1,14 +1,10 @@
 import 'reset.css';
+import GlobalProvider from './contexts/GlobalProvider';
 import GlobalStyles from './styles/globalStyles';
 
 function App() {
     GlobalStyles();
-    return (
-        <div>
-            <p>Hello</p>
-            <a>Hello</a>
-        </div>
-    );
+    return <GlobalProvider></GlobalProvider>;
 }
 
 export default App;
