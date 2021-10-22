@@ -1,5 +1,5 @@
 import 'reset.css';
-import GlobalProvider from './contexts/GlobalProvider';
+import GlobalProvider from './contexts/GlobalContext';
 import GlobalStyles from './styles/globalStyles';
 
 function App() {

@@ -14,6 +14,8 @@ const GlobalStyles = globalCss({
         textRendering: 'optimizeLegibility',
         WebkitFontSmoothing: 'antialiased',
         MozOsxFontSmoothing: 'grayscale',
+        transition: 'all 0.2s',
+        transitionProperty: 'color, background-color',
     },
     a: {
         textDecoration: 'none',
