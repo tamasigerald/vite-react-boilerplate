@@ -1,7 +1,7 @@
 import { FC } from 'react';
 import { useStitchTheme } from 'contexts/ThemeContext';
-import Layout from '@/containers/Layout';
-import Button from '@/components/Button';
+import Layout from 'containers/Layout';
+import Button from 'components/Button';
 
 const HomePage: FC = () => {
     const { currentTheme, toggleTheme } = useStitchTheme();

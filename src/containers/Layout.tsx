@@ -1,4 +1,4 @@
-import { styled } from '@/styles/stitches.config';
+import { styled } from 'styles/stitches.config';
 
 const Layout = styled('main', {
     display: 'flex',
