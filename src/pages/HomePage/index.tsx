@@ -1,6 +1,6 @@
 import { FC } from 'react';
 import { useStitchTheme } from 'contexts/ThemeContext';
-import Layout from 'containers/Layout';
+import Layout from 'containers/layout/Layout';
 import Button from 'components/Button';
 
 const HomePage: FC = () => {
@@ -9,7 +9,7 @@ const HomePage: FC = () => {
     return (
         <Layout>
             <p>Hello</p>
-            <Button buttonColor={'blue'} onClick={() => toggleTheme(currentTheme === 'light' ? 'dark' : 'light')}>
+            <Button onClick={() => toggleTheme(currentTheme === 'light' ? 'dark' : 'light')}>
                 toggle {currentTheme === 'light' ? 'dark' : 'light'}
             </Button>
         </Layout>

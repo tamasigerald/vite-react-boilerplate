@@ -1,10 +1,18 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import App from './App';
+import { render } from 'react-dom';
+import { BrowserRouter, Navigate, Routes, Route } from 'react-router-dom';
 
-ReactDOM.render(
-    <React.StrictMode>
-        <App />
-    </React.StrictMode>,
-    document.getElementById('root'),
+import App from './App';
+import HomePage from 'pages/HomePage';
+
+const rootElement = document.getElementById('root');
+render(
+    <BrowserRouter>
+        <Routes>
+            <Route path="/" element={<App />}>
+                <Route path="home" element={<HomePage />}></Route>
+                <Route path="*" element={<Navigate to="/" />} />
+            </Route>
+        </Routes>
+    </BrowserRouter>,
+    rootElement,
 );

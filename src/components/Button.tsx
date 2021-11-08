@@ -1,7 +1,7 @@
 import { styled, theme } from 'styles/stitches.config';
 
 const Button = styled('button', {
-    backgroundColor: '$dark_blue',
+    backgroundColor: '$body',
     borderRadius: '$global',
     margin: '0 auto',
     marginTop: '$lg',
