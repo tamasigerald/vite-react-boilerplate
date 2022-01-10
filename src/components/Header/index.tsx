@@ -5,7 +5,6 @@ import AbletonLogo from 'assets/images/svg/logo.svg';
 import { useContext } from 'react';
 import { GlobalContext } from 'contexts/GlobalContext';
 import NavMenu from './NavMenu';
-import { Link } from 'react-router-dom';
 
 const Header = () => {
     const { menuVisible } = useContext(GlobalContext);
@@ -17,7 +16,6 @@ const Header = () => {
                     <AbletonLogo />
                 </Logo>
                 <NavMenu />
-                <Link to="/home">Home</Link>
             </Navbar>
             <HorizontalSeparator />
         </HeaderWrapper>
@@ -28,6 +26,7 @@ export default Header;
 
 const HeaderWrapper = styled('header', {
     height: '130px',
+    position: 'relative',
 
     backgroundColor: '$body',
 });
@@ -36,6 +35,8 @@ const Navbar = styled('div', {
     display: 'flex',
     height: '70px',
     padding: '1.25rem',
+    position: 'relative',
+    zIndex: '1',
 });
 
 const Logo = styled('div', {
